@@ -1,0 +1,550 @@
+body {
+	width: 1349px;
+	height: 1199px;
+	background: #efefef;
+}
+.clear-fixed::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.box {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+.box .box-tp {
+	height: 130px;
+
+}
+.box .box-tp>a {
+	float: left;
+	display: inline-block;
+	width: 300px;
+	height: 60px;
+	margin-top: 35px;
+	background: url('../../image/reg/1.png');
+	background-position: -50px -14px;
+}
+.box .box-tp .rt {
+	float: right;
+	margin-top: 50px;
+	font-size: 18px;
+}
+.box .box-tp .rt a {
+	color: #ca5252;
+}
+.box .content {
+	height: 963px;
+	background: #fff;
+	text-align: center;
+	border-radius: 6px;
+	box-shadow:0 3px 3px #cbc9c9;
+}
+.box .content .reg-tit {
+	position: relative;
+	width: 320px;
+	height: 76px;
+	margin: 0 auto;
+	padding-top: 44px;
+}
+.box .content .common {
+	float: left;
+	width: 158px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #fff;
+	background: #ca5252;
+	border: 1px solid #ca5252;
+	border-right: none;
+}
+.box .content .beau {
+	float: left;
+	width: 158px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #666;
+	border: 1px solid #ccc;
+	border-left: 0;
+}
+.box .content .reg-tit i {
+	position: absolute;
+	right: 22px;
+	top: 48px;
+	color: #ca5252;
+}
+.content .inp {
+	font-size: 16px;
+	height: 620px;
+}
+.content .inp span {
+	float: left;
+	width: 340px;
+	height: 45px;
+	line-height: 45px;
+	text-align: right;
+}
+.content .inp input {
+	float: left;
+	width: 320px;
+	height: 44px;
+	font-size: 16px;
+	text-indent: 0.5em;
+	/*outline: 1px solid #4aafe9;*/
+}
+.content .inp>div {
+	height: 72px;
+}
+.content .inp .okpass {
+	height: 29px;
+}
+.content .inp .yanzheng {
+	position: relative;
+	height: 56px;
+
+}
+.inp .del {
+	display: none;
+	float: right;
+	position: absolute;
+	right: 513px;
+    top: 253px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 10px 0 10px;
+	cursor: pointer;
+	background: url('../../image/reg/1.png') -325px -101px;
+}
+
+.inp .sw {
+	display: block;
+	float: right;
+	position: absolute;
+	right: 338px;
+    top: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 10px 0 10px;
+	cursor: pointer;
+	background: url('../../image/reg/1.png') -325px -101px;
+}
+.inp .del2 {
+	display: none;
+	float: right;
+	position: absolute;
+	right: 513px;
+    top: 325px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 10px 0 10px;
+	cursor: pointer;
+	background: url('../../image/reg/1.png') -325px -101px;
+}
+
+.inp .sw1 {
+	display: block;
+	float: right;
+	position: absolute;
+	right: 513px;
+    top: 320px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 10px 0 10px;
+	cursor: pointer;
+	background: url('../../image/reg/1.png') -325px -101px;
+}
+.inp .sw2 {
+	display: block;
+	float: right;
+	position: absolute;
+	right: 513px;
+    top: 386px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 10px 0 10px;
+	cursor: pointer;
+	background: url('../../image/reg/1.png') -325px -101px;
+}
+.inp .sw3 {
+	display: block;
+	float: right;
+	position: absolute;
+	right: 513px;
+    top: 510px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px 10px 0 10px;
+	cursor: pointer;
+	background: url('../../image/reg/1.png') -325px -101px;
+}
+.inp small.one {
+	float: left;
+	margin-left: 12px;
+	line-height: 45px;
+	font-size: 12px;
+	color: #999;
+}
+.inp form>div {
+	margin-bottom: 20px;
+}
+
+/*用户名下拉框*/
+.username {
+	position: relative;
+}
+.select {
+	display: none;
+	position: absolute;
+	left: 340px;
+	top: 45px;
+	width: 320px;
+	border: 1px solid #ccc;
+	background: #f5f5f5;
+	font-size: 16px;
+}
+.select li {
+	height: 26px;
+	line-height: 26px;
+	color: #999;
+	text-align: left;
+}
+.select li:hover {
+	background: #d2e8f8;
+	cursor: pointer;
+}
+/*用户名不正确*/
+
+.error .user {
+	border: 1px solid #fa5b5b;
+}
+.error1 .inp small.one::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -391px -99px;
+}
+/*蓝色边框*/
+.focu .user {
+	border: 1px solid #4aafe9;
+}
+.focu1 .pass {
+	border: 1px solid #4aafe9;
+}
+.focu2 .okpassword {
+	border: 1px solid #4aafe9;
+}
+.focu3 .n {
+	border: 1px solid #4aafe9;
+}
+.focu4 .yz {
+	border: 1px solid #4aafe9;
+}
+.focu4 .yz {
+	border: 1px solid #4aafe9;
+}
+/*用户名不存在*/
+.success .usser {
+	border: 1px solid #4aafe9;
+}
+.success1 .inp small.one::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -26px -98px;
+}
+
+/*用户名存在*/
+.zc .user {
+	border: 1px solid #fa5b5b;
+}
+.zc1 .inp small.one::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	color: red;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -62px -98px;
+}
+.zc2 small.one {
+	color: red;
+}
+
+
+/*密码*/
+.inp small.two {
+	float: left;
+	margin-left: 12px;
+	line-height: 45px;
+	font-size: 12px;
+	color: #999;
+}
+
+.error2 .inp small.two {
+	color: red;
+}
+
+.error2 .inp small.two::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -62px -98px;
+}
+/*红色边框*/
+.error3 .pass {
+	border: 1px solid #fa5b5b;
+}
+.succ .inp small.two::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -26px -98px;
+}
+
+/*确认密码*/
+.inp small.three {
+	float: left;
+	margin-left: 12px;
+	line-height: 45px;
+	font-size: 12px;
+	color: red;
+}
+.dui .inp small.three::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -26px -98px;
+}
+.cuo .inp small.three::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -62px -98px;
+}
+.redbd .okpassword {
+	border: 1px solid #fa5b5b;
+}
+/*手机号*/
+.inp small.four {
+	float: left;
+	margin-left: 12px;
+	line-height: 45px;
+	font-size: 12px;
+	color: red;
+}
+.numcuo .inp small.four::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -62px -98px;
+}
+.numdui .inp small.four::before {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 24px;
+	vertical-align: -8px;
+	margin-right: 2px;
+	background: url("../../image/reg/1.png") -26px -98px;
+}
+.numred .n {
+	border: 1px solid #fa5b5b;
+}
+
+
+/*让后面显示的内容晃动*/
+.shake small{
+	animation: shake .5s 1;
+}
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	10% {
+		transform: translateX(-8px);
+	}
+	20% {
+		transform: translateX(0);
+	}
+	30% {
+		transform: translateX(8px);
+	}
+	40% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-8px);
+	}
+	60% {
+		transform: translateX(0);
+	}
+	70% {
+		transform: translateX(8px);
+	}
+	80% {
+		transform: translateX(0px);
+	}
+	90% {
+		transform: translateX(-8px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+
+}
+.dianji {
+	float: left;
+	width: 322px;
+	padding-top: 10px;
+}
+ .dianji .img {
+	display: none;
+	position: absolute;
+	top: -98px;
+	left: 340px;
+	border-radius: 8px;
+}
+ .dianji .gou {
+ 	display: none;
+ }
+.content .inp .yuan {
+	float: left;
+	width: 320px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	border: 1px solid #cbcbcb;
+	border-radius: 80px;
+	cursor: default;
+}
+.content .inp .num {
+	height: 48px;
+}
+.clor {
+	color: red;
+}
+.content .inp .a {
+	height: 22px;
+	font-size: 12px;
+	color: #999;
+	text-align: left;
+	margin-left: 338px;
+}
+.content .inp .qiehuan {
+	color: #4cb5ff;
+	cursor: pointer;
+	margin-bottom: 0;
+}
+.content .inp .massg input {
+	width: 190px;
+}
+.content .inp .massg div {
+	display: inline-block;
+	float: left;
+	width: 120px;
+	height: 46px;
+	line-height: 46px;
+	margin-left: 10px;
+	color: #fff;
+	opacity: .6;
+	background: #a1d1f6;
+}
+.content .inp .r {
+	float: none;
+	width: 322px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 18px;
+	color: #fff;
+	background: #ca5252;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	opacity: .6;
+}
+.content .inp .yinsi {
+	width: 322px;
+	margin: 0 auto;
+}
+.content .inp .yinsi input {
+	width: 14px;
+	height: 14px;
+}
+.content .inp .yinsi div {
+	font-size: 12px;
+	color: #b1b1b1;
+	text-align: left;
+	text-indent: .5em;
+	line-height: 20px;
+}
+.content .inp .yinsi div a {
+	color: #b1b1b1;
+}
+.content .inp .yinsi div a:hover {
+	color: #333;
+}
+
+.content .yinsi .gouxuan {
+
+	width: 14px;
+	height: 14px;
+	border: 1px solid #aaa;
+	background: url('../../image/reg/1.png') 0 -278px;
+}
+.content .yinsi .shan {
+	background: none;
+}
+.content .yinsi input {
+	opacity: 0;
+}
+/*底部*/
+
+.ft {
+	width: 1000px;
+	height: 106px;
+	margin: 0 auto;
+	padding: 30px 0;
+	text-align: center;
+	color: #b1b1b1;
+	font-size: 12px;
+}
+.ft p {
+	padding-bottom: 10px;
+}
+.ft p a {
+	color: #b1b1b1;
+}
+.ft p a:hover {
+	color: #ee8c18;
+}
